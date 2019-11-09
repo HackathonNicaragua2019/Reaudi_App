@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "334011672353",
+    "firebase_url": "https://reaudi-923df.firebaseio.com",
+    "project_id": "reaudi-923df",
+    "storage_bucket": "reaudi-923df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334011672353:android:6ae96dd1d8cad7d97e8060",
+        "android_client_info": {
+          "package_name": "com.nicode.reaudi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334011672353-ai577as4d0116cjpbcl1otspkb27hkek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2U3RT1PlWwrbDXaasqERbQjUOq8zsXAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334011672353-ai577as4d0116cjpbcl1otspkb27hkek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
