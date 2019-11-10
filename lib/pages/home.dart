@@ -31,6 +31,7 @@ class _HomePageState extends State<HomePage> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        backgroundColor: customColors.customGray,
         drawer: Drawer(),
         appBar: AppBar(
           // Here we take the value from the MyHomePage object that was created by
@@ -83,36 +84,316 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             ListView(
               children: <Widget>[
-                Card(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      const ListTile(
-                        leading: Icon(Icons.album),
-                        title: Text('The Enchanted Nightingale'),
-                        subtitle: Text(
-                            'Music by Julie Gable. Lyrics by Sidney Stein.'),
-                      ),
-                      ButtonTheme.bar(
-                        // make buttons use the appropriate styles for cards
-                        child: ButtonBar(
-                          children: <Widget>[
-                            FlatButton(
-                              child: const Text('BUY TICKETS'),
-                              onPressed: () {
-                                /* ... */
-                              },
-                            ),
-                            FlatButton(
-                              child: const Text('LISTEN'),
-                              onPressed: () {
-                                /* ... */
-                              },
-                            ),
-                          ],
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Card(
+                    elevation: 40,
+                    child: Column(
+                      children: <Widget>[
+                        const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: AssetImage(
+                                'assets/profiles_photos/defaultFemenino.png'),
+                          ),
+                          trailing: IconButton(
+                            icon: Icon(Icons.favorite_border),
+                            color: Colors.white,
+                          ),
+                          title: Text(
+                            'Anónimo-ABC',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          subtitle: Text(
+                            '10-Nov-2019',
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
                         ),
-                      ),
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Text(
+                            'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+                            style: TextStyle(
+                                color: customColors.gray,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 14.6, right: 14.6, bottom: 14.6),
+                          child: Text(
+                            'Lorem Ipsum is simply dummy text of the printing '
+                            'and typesetting industry. Lorem Ipsum has been...',
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Divider(
+                            color: customColors.gray,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Text(
+                                    '568',
+                                    style: TextStyle(
+                                      color: customColors.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 4),
+                                    child: Text(
+                                      'Comentarios',
+                                      style: TextStyle(
+                                        color: customColors.black,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Text(
+                                    '568',
+                                    style: TextStyle(
+                                      color: customColors.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 4),
+                                    child: Text(
+                                      'Visitas',
+                                      style: TextStyle(
+                                        color: customColors.black,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Card(
+                    elevation: 40,
+                    child: Column(
+                      children: <Widget>[
+                        const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: AssetImage(
+                                'assets/profiles_photos/defaultFemenino.png'),
+                          ),
+                          trailing: IconButton(
+                            icon: Icon(Icons.favorite_border),
+                            color: Colors.white,
+                          ),
+                          title: Text(
+                            'Anónimo-ABC',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          subtitle: Text(
+                            '10-Nov-2019',
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Text(
+                            'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+                            style: TextStyle(
+                                color: customColors.gray,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 14.6, right: 14.6, bottom: 14.6),
+                          child: Text(
+                            'Lorem Ipsum is simply dummy text of the printing '
+                            'and typesetting industry. Lorem Ipsum has been...',
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Divider(
+                            color: customColors.gray,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Text(
+                                    '568',
+                                    style: TextStyle(
+                                      color: customColors.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 4),
+                                    child: Text(
+                                      'Comentarios',
+                                      style: TextStyle(
+                                        color: customColors.black,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Text(
+                                    '568',
+                                    style: TextStyle(
+                                      color: customColors.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 4),
+                                    child: Text(
+                                      'Visitas',
+                                      style: TextStyle(
+                                        color: customColors.black,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Card(
+                    elevation: 40,
+                    child: Column(
+                      children: <Widget>[
+                        const ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: AssetImage(
+                                'assets/profiles_photos/defaultFemenino.png'),
+                          ),
+                          trailing: IconButton(
+                            icon: Icon(Icons.favorite_border),
+                            color: Colors.white,
+                          ),
+                          title: Text(
+                            'Anónimo-ABC',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          subtitle: Text(
+                            '10-Nov-2019',
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Text(
+                            'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+                            style: TextStyle(
+                                color: customColors.gray,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 14.6, right: 14.6, bottom: 14.6),
+                          child: Text(
+                            'Lorem Ipsum is simply dummy text of the printing '
+                            'and typesetting industry. Lorem Ipsum has been...',
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Divider(
+                            color: customColors.gray,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(14.6),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Text(
+                                    '568',
+                                    style: TextStyle(
+                                      color: customColors.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 4),
+                                    child: Text(
+                                      'Comentarios',
+                                      style: TextStyle(
+                                        color: customColors.black,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Text(
+                                    '568',
+                                    style: TextStyle(
+                                      color: customColors.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 4),
+                                    child: Text(
+                                      'Visitas',
+                                      style: TextStyle(
+                                        color: customColors.black,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
