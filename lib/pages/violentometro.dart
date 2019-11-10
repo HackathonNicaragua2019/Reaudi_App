@@ -7,6 +7,13 @@ class ViolentometroPage extends StatefulWidget {
 }
 
 class _ViolentometroPageState extends State<ViolentometroPage> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
