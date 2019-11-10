@@ -36,6 +36,14 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  flutter_launcher_icons:
+
+flutter_icons:
+  image_path: "assets/Reaudi.png"
+  android: true
+  ios: true
+
+
 
 
 
