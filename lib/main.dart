@@ -95,7 +95,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: primarySwatch(),
         primaryColor: primaryColor(),
       ),
-      home: LoginPage(),
+      home: RouterPage(),
     );
   }
 }
