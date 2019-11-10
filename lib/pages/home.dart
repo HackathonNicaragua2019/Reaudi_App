@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Card(
-                    elevation: 40,
+                    // elevation: 40,
                     child: Column(
                       children: <Widget>[
                         const ListTile(
@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                                 'assets/profiles_photos/defaultFemenino.png'),
                           ),
                           trailing: IconButton(
-                            icon: Icon(Icons.favorite_border),
+                            icon: Icon(Icons.sentiment_dissatisfied),
                             color: Colors.white,
                           ),
                           title: Text(
@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Card(
-                    elevation: 40,
+                    // elevation: 40,
                     child: Column(
                       children: <Widget>[
                         const ListTile(
@@ -200,7 +200,7 @@ class _HomePageState extends State<HomePage> {
                                 'assets/profiles_photos/defaultFemenino.png'),
                           ),
                           trailing: IconButton(
-                            icon: Icon(Icons.favorite_border),
+                            icon: Icon(Icons.sentiment_dissatisfied),
                             color: Colors.white,
                           ),
                           title: Text(
@@ -295,7 +295,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Card(
-                    elevation: 40,
+                    // elevation: 40,
                     child: Column(
                       children: <Widget>[
                         const ListTile(
@@ -304,7 +304,7 @@ class _HomePageState extends State<HomePage> {
                                 'assets/profiles_photos/defaultFemenino.png'),
                           ),
                           trailing: IconButton(
-                            icon: Icon(Icons.favorite_border),
+                            icon: Icon(Icons.sentiment_dissatisfied),
                             color: Colors.white,
                           ),
                           title: Text(
@@ -407,6 +407,10 @@ class _HomePageState extends State<HomePage> {
               onSignedOut: widget.onSignedOut,
             )*/
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () => print('Agregar Post se ha presionado'),
         ),
       ),
     );
