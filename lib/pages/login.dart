@@ -150,7 +150,7 @@ class _LoginPageState extends State<LoginPage> {
                                     ),
                                     borderSide: BorderSide.none),
                                 filled: true,
-                                fillColor: customColors.gray,
+                                fillColor: Colors.grey[200],
                                 hasFloatingPlaceholder: true,
                               ),
                             )
@@ -161,7 +161,7 @@ class _LoginPageState extends State<LoginPage> {
                               placeholder: 'Email',
                               cursorColor: customColors.primaryColor,
                               decoration: BoxDecoration(
-                                color: customColors.gray,
+                                color: Colors.grey[200],
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(30.0)),
                               ),
@@ -175,6 +175,7 @@ class _LoginPageState extends State<LoginPage> {
                           ? TextFormField(
                               autofocus: false,
                               obscureText: true,
+                              cursorColor: customColors.primaryColor,
                               validator: (value) => value.isEmpty
                                   ? 'La contraseña no puede estar en blanco.'
                                   : null,
@@ -184,11 +185,13 @@ class _LoginPageState extends State<LoginPage> {
                                 contentPadding:
                                     EdgeInsets.fromLTRB(15.0, 20.0, 20.0, 15.0),
                                 border: OutlineInputBorder(
-                                    borderRadius: const BorderRadius.all(
-                                        const Radius.circular(30.0)),
-                                    borderSide: BorderSide.none),
+                                  borderRadius: const BorderRadius.all(
+                                    const Radius.circular(30.0),
+                                  ),
+                                  borderSide: BorderSide.none,
+                                ),
                                 filled: true,
-                                fillColor: customColors.gray,
+                                fillColor: Colors.grey[200],
                               ),
                             )
                           : CupertinoTextField(
@@ -198,7 +201,7 @@ class _LoginPageState extends State<LoginPage> {
                               onSubmitted: (value) => _password = value,
                               placeholder: 'Contraseña',
                               decoration: BoxDecoration(
-                                color: customColors.gray,
+                                color: Colors.grey[200],
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(30.0)),
                               ),
@@ -222,7 +225,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Text(
                           'Iniciar Sesión',
                           style: TextStyle(
-                            color: customColors.gray,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -258,7 +261,7 @@ class _LoginPageState extends State<LoginPage> {
             this.widget.isAndroid ? TargetPlatform.android : TargetPlatform.iOS,
       ),
       home: Scaffold(
-        backgroundColor: customColors.gray,
+        backgroundColor: Colors.white,
         body: Builder(
           builder: (context) => Center(
             child: ListView(
@@ -281,7 +284,7 @@ class _LoginPageState extends State<LoginPage> {
                   padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
                   child: Center(
                     child: Text(
-                      'Reaudi',
+                      'REAUDI',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: customColors.primaryColor,
