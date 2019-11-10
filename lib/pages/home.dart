@@ -31,10 +31,8 @@ class _HomePageState extends State<HomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.titulo),
       ),
-      body: Scaffold(
-        body: Center(
-          child: Text('Home Page'),
-        ),
+      body: Center(
+        child: Text('Hola mundo'),
       ),
     );
   }
